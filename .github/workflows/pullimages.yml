@@ -33,7 +33,7 @@ jobs:
           docker tag registry.cn-beijing.aliyuncs.com/k8sgcrios/metrics-server:v0.6.2
       - name: loadAliyun image server plush images
         run: |
-          docker login --username=${{ secrets.ALIYUNUSERNAME }} --password=${{ sercrets.ALIYUNPASSWORD }} registry.cn-beijing.aliyuncs.com
+          docker login --username=huahai53 --password=xiao5992155 registry.cn-beijing.aliyuncs.com
           docker push registry.cn-beijing.aliyuncs.com/k8sgcrios/metrics-server:v0.6.2
       - name: push completions
         run: |
