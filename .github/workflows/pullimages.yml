@@ -30,7 +30,7 @@ jobs:
       - name: Runner pull k8s.gcr.io images
         run: |
           docker pull k8s.gcr.io/metrics-server/metrics-server:v0.6.2
-          docker tag registry.cn-beijing.aliyuncs.com/k8sgcrios/metrics-server:v0.6.2
+          docker tag  k8s.gcr.io/metrics-server/metrics-server:v0.6.2 registry.cn-beijing.aliyuncs.com/k8sgcrios/metrics-server:v0.6.2
       - name: loadAliyun image server plush images
         run: |
           docker login --username=huahai53 --password=xiao5992155 registry.cn-beijing.aliyuncs.com
